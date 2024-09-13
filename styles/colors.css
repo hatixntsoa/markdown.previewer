@@ -1,0 +1,49 @@
+:root {
+  --primary-color: white;
+  --border-color: #373a3a;
+  --icon-color: #c5cad6;
+  --header-color: #010409;
+  --soft-color: #0d1117;
+  --sidebar-active: #21262c;
+  --sidebar-hover: #1a1f24;
+  --content-header: #010409d9;
+  --hover-color: #181b1f;
+  --content-color: #010409;
+  --scroll-bg: #333;
+  --scroll-handle: #555;
+  --handle-hover: #777;
+  --github-green: #238636;
+  --github-blue: #1f6feb;
+  --github-orange: #f78166;
+  --shadow-color: #353b43;
+  --connected: #45cc58;
+  --checkmark: #45cc58;
+  --tooltip-color: #010409;
+  --box-shadow-color: black;
+  --overlay: #000000b3;
+}
+
+.light-mode {
+  --primary-color: black;
+  --border-color: #d8dee4;
+  --icon-color: black;
+  --header-color: #f6f8fa;
+  --soft-color: white;
+  --sidebar-active: #e4e6e9;
+  --sidebar-hover: #f0f2f4;
+  --content-header: #f0f2f4c3;
+  --hover-color: #f0f0f0;
+  --content-color: #f6f8fa;
+  --scroll-bg: #cac8c8;
+  --scroll-handle: #9b9595;
+  --handle-hover: #a59f9f;
+  --github-green: #238636;
+  --github-blue: #1f6feb;
+  --github-orange: red;
+  --shadow-color: #0000003d;
+  --connected: #45cc58;
+  --checkmark: #238636;
+  --tooltip-color: white;
+  --box-shadow-color: #0000001d;
+  --overlay: #42424266;
+}

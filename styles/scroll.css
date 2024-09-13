@@ -1,0 +1,43 @@
+@import url("./colors.css");
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scroll-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-handle); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--handle-hover);
+}
+
+/* Dark mode scrollbar */
+/* For webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scroll-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-handle);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--handle-hover);
+}

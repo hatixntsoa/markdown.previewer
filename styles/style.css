@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+textarea {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-right: 1px solid #ddd;
+  outline: none;
+  resize: none;
+}
+
+.preview {
+  width: 50%;
+  padding: 10px;
+  background-color: #0d1117;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.markdown-body {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-family: 'Arial', sans-serif; /* Apply a web-safe font */
+  font-size: 18px;
+}
+
+.code-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #21262d;
+  border: 1px solid transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-sizing: border-box;
+}
+
+/* Show copy button when hovering over code block */
+.code-block:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn img {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.copy-btn:hover {
+  background-color: #30363d;
+  border: 1px solid #8b949e;
+}
+
+.copy-btn.copied {
+  border: 1px solid #238636;
+  box-shadow: 0 0 2px 2px #226337;
+}
