@@ -1,0 +1,8 @@
+{
+  "name": "Markdown Preview",
+  "short_name": "Md Preview",
+  "start_url": "/markdown_preview",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}
