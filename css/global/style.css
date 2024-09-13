@@ -36,6 +36,8 @@ textarea {
   border-right: 1px solid #ddd;
   outline: none;
   resize: none;
+  background-color: #0d1117;
+  color: #c9d1d9;
 }
 
 /* Style for preview area */
@@ -45,6 +47,7 @@ textarea {
   background-color: #0d1117;
   overflow-y: auto; /* Vertical scroll if content overflows */
   box-sizing: border-box;
+  color: #c9d1d9;
 }
 
 /* Style for markdown content */
@@ -67,10 +70,9 @@ textarea {
   right: 5px;
   background-color: #21262d;
   border: 1px solid transparent;
-  border: none;
   padding: 10px;
   cursor: pointer;
-  font-size: 40px; /* Font size unchanged */
+  font-size: 20px; /* Font size unchanged */
   border-radius: 8px;
   display: flex;
   align-items: center;

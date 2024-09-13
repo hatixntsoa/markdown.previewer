@@ -65,4 +65,5 @@ markdownInput.addEventListener('input', updatePreview);
 
 // Initial content for demonstration (optional)
 // markdownInput.value = `# Markdown Previewer with Code Copy\n\n\`\`\`shell\n# Example shell code block\nls -la\n\`\`\``;
+
 updatePreview();
