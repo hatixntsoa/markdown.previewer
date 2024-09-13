@@ -1,3 +1,5 @@
+@import url("./colors.css");
+
 /* Reset margins, paddings, and box-sizing for all elements */
 * {
   margin: 0;
@@ -33,26 +35,26 @@ textarea {
   height: 100%;
   padding: 10px;
   font-size: 16px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid var(--separator-color);
   outline: none;
   resize: none;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  background-color: var(--content-color);
+  color: var(--primary-color);
 }
 
 /* Style for preview area */
 .preview {
   width: 50%;
   padding: 10px;
-  background-color: #0d1117;
+  background-color: var(--content-color);
   overflow-y: auto; /* Vertical scroll if content overflows */
   box-sizing: border-box;
-  color: #c9d1d9;
+  color: var(--primary-color);
 }
 
 /* Style for markdown content */
 .markdown-body {
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 10px var(--inset-color);
   padding: 10px;
   font-family: 'Arial', sans-serif; /* Apply a web-safe font */
   font-size: 18px;
@@ -68,7 +70,7 @@ textarea {
   position: absolute;
   top: 5px;
   right: 5px;
-  background-color: #21262d;
+  background-color: var(--btn-bg);
   border: 1px solid transparent;
   padding: 10px;
   cursor: pointer;
@@ -93,11 +95,11 @@ textarea {
 }
 
 .copy-btn:hover {
-  background-color: #30363d;
-  border: 1px solid #8b949e;
+  background-color: var(--btn-hover-bg);
+  border: 1px solid var(--btn-hover-border);
 }
 
 .copy-btn.copied {
-  border: 1px solid #238636;
-  box-shadow: 0 0 2px 2px #226337;
+  border: 1px solid var(--btn-copied);
+  box-shadow: 0 0 2px 2px var(--btn-copied-shadow);
 }
