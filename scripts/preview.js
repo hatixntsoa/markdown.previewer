@@ -6,6 +6,16 @@ function updatePreview() {
   const markdownText = markdownInput.value;
   const htmlContent = marked.parse(markdownText);
   markdownPreview.innerHTML = htmlContent;
+
+  // Add KaTeX rendering
+  renderMathInElement(markdownPreview, {
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '$', right: '$', display: false }
+    ],
+    // Optionally: Add any additional options here
+  });
+
   addCopyButtons();
 }
 
