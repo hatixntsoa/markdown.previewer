@@ -7,13 +7,18 @@ function updatePreview() {
   const htmlContent = marked.parse(markdownText);
   markdownPreview.innerHTML = htmlContent;
 
+  // Initialize syntax highlighting for code blocks
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightElement(block);
+  });
+
   // Add KaTeX rendering
   renderMathInElement(markdownPreview, {
     delimiters: [
-        {left: '$$', right: '$$', display: true},
-        {left: '$', right: '$', display: false},
-        {left: '\\(', right: '\\)', display: false},
-        {left: '\\[', right: '\\]', display: true}
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false},
+      {left: '\\[', right: '\\]', display: true}
     ],
     // Disable errors on the console
     throwOnError : false
