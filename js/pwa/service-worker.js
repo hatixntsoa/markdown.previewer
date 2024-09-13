@@ -2,12 +2,12 @@ const CACHE_NAME = 'markdown-preview-v1';
 const urlsToCache = [
   '/markdown_preview',
   '/markdown_preview/index.html',
-  '/markdown_preview/styles/style.css',
-  '/markdown_preview/scripts/marked.min.js',
-  '/markdown_preview/scripts/preview.js',
-  '/markdown_preview/images/check.png',
-  '/markdown_preview/images/copy.png',
-  '/markdown_preview/images/markdown.png',
+  '/markdown_preview/css/global/style.css',
+  '/markdown_preview/js/mdpreview/marked.min.js',
+  '/markdown_preview/js/mdpreview/preview.js',
+  '/markdown_preview/imgs/check.png',
+  '/markdown_preview/imgs/copy.png',
+  '/markdown_preview/imgs/markdown.png',
   '/markdown_preview/manifest.json'
 ];
 

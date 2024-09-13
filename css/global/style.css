@@ -1,22 +1,33 @@
-*{
+/* Reset margins, paddings, and box-sizing for all elements */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Ensure body and html occupy full viewport without scroll */
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevent body from scrolling */
+}
+
+/* Set up a flex container for the main layout */
 body {
   display: flex;
-  height: 100vh;
-  margin: 0;
+  flex-direction: row; /* Ensure layout is row-wise */
+  height: 100%;
   font-family: Arial, sans-serif;
 }
 
+/* Container to handle flex layout and overflow */
 .container {
   display: flex;
-  flex: 1;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent scrollbars on container */
 }
 
+/* Style for textarea */
 textarea {
   width: 50%;
   height: 100%;
@@ -27,14 +38,16 @@ textarea {
   resize: none;
 }
 
+/* Style for preview area */
 .preview {
   width: 50%;
   padding: 10px;
   background-color: #0d1117;
-  overflow-y: scroll;
+  overflow-y: auto; /* Vertical scroll if content overflows */
   box-sizing: border-box;
 }
 
+/* Style for markdown content */
 .markdown-body {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -42,6 +55,7 @@ textarea {
   font-size: 18px;
 }
 
+/* Style for code blocks and copy button */
 .code-block {
   position: relative;
   margin-bottom: 20px;
@@ -56,14 +70,13 @@ textarea {
   border: none;
   padding: 10px;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 40px; /* Font size unchanged */
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s;
-  box-sizing: border-box;
 }
 
 /* Show copy button when hovering over code block */

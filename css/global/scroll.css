@@ -1,0 +1,43 @@
+@import url("./colors.css");
+
+/* Vertical Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track for vertical scrollbar */
+::-webkit-scrollbar-track {
+  background: var(--scroll-bg);
+}
+
+/* Handle for vertical scrollbar */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-handle);
+  border-radius: 5px;
+}
+
+/* Handle on hover for vertical scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--handle-hover);
+}
+
+/* Horizontal Scrollbar */
+::-webkit-scrollbar-horizontal {
+  height: 10px;
+}
+
+/* Track for horizontal scrollbar */
+::-webkit-scrollbar-track-horizontal {
+  background: var(--scroll-bg);
+}
+
+/* Handle for horizontal scrollbar */
+::-webkit-scrollbar-thumb-horizontal {
+  background: var(--scroll-handle);
+  border-radius: 5px;
+}
+
+/* Handle on hover for horizontal scrollbar */
+::-webkit-scrollbar-thumb-horizontal:hover {
+  background: var(--handle-hover);
+}

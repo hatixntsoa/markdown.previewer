@@ -4,24 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Markdown Preview</title>
-  <link rel="stylesheet" href="styles/ghmd.min.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/scroll.css">
-  <link rel="stylesheet" href="styles/katex.min.css">
-  <link rel="icon" href="images/markdown.png">
+  <link rel="stylesheet" href="css/mdpreview/ghmd.min.css">
+  <link rel="stylesheet" href="css/global/style.css">
+  <link rel="stylesheet" href="css/global/scroll.css">
+  <link rel="stylesheet" href="css/katex/katex.min.css">
+  <link rel="icon" href="imgs/markdown.png">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div class="container">
     <textarea id="markdown-input" placeholder="Type your Markdown here..."></textarea>
+
     <div class="preview">
       <div id="markdown-preview" class="markdown-body"></div>
     </div>
   </div>
-  <script src="scripts/marked.min.js"></script>
-  <script src="scripts/preview.js"></script>
-  <script src="scripts/pwa.js"></script>
-  <script defer src="scripts/katex.min.js"></script>
-  <script defer src="scripts/auto-render.min.js"></script>
+
+  <script src="js/katex/katex.min.js"></script>
+  <script src="js/katex/auto-render.min.js"></script>
+  <script src="js/mdpreview/marked.min.js"></script>
+  <script src="js/mdpreview/preview.js"></script>
+  <script src="js/pwa/pwa.js"></script>
 </body>
 </html>
