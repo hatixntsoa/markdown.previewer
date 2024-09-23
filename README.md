@@ -20,7 +20,7 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/h471x/markdown_preview.git
+   git clone https://github.com/h471x/markdown_previewer.git
    ```
    
 2. **Navigate to the project directory:**
@@ -41,11 +41,11 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 1. **Clone the repository directly to the web server directory:**
    - For **Apache** (default document root: `/var/www/html/`):
      ```bash
-     sudo git clone https://github.com/h471x/markdown_preview.git /var/www/html/markdown-preview
+     sudo git clone https://github.com/h471x/markdown_previewer.git /var/www/html/markdown-preview
      ```
    - For **Nginx** (default document root: `/usr/share/nginx/html/`):
      ```bash
-     sudo git clone https://github.com/h471x/markdown_preview.git /usr/share/nginx/html/markdown-preview
+     sudo git clone https://github.com/h471x/markdown_previewer.git /usr/share/nginx/html/markdown-preview
      ```
 
 2. **Ensure the web server is running:**
@@ -67,17 +67,17 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 
 1. **Clone the repository to your local machine:**
    ```bash
-   git clone https://github.com/h471x/markdown_preview.git
+   git clone https://github.com/h471x/markdown_previewer.git
    ```
 
 2. **Copy the project directory to the WAMP or XAMPP document root:**
    - For **WAMP** (usually `C:\wamp64\www\`):
      ```bash
-     xcopy markdown_preview C:\wamp64\www\markdown_preview /E /I
+     xcopy markdown_previewer C:\wamp64\www\markdown_previewer /E /I
      ```
    - For **XAMPP** (usually `C:\xampp\htdocs\`):
      ```bash
-     xcopy markdown_preview C:\xampp\htdocs\markdown_preview /E /I
+     xcopy markdown_previewer C:\xampp\htdocs\markdown_previewer /E /I
      ```
 
 3. **Start the WAMP or XAMPP server.**
