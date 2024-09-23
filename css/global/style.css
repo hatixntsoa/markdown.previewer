@@ -1,6 +1,5 @@
 @import url("./colors.css");
 
-/* Reset margins, paddings, and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +9,13 @@
 /* Ensure body and html occupy full viewport without scroll */
 html, body {
   height: 100%;
-  overflow: hidden; /* Prevent body from scrolling */
+  overflow: hidden;
 }
 
 /* Set up a flex container for the main layout */
 body {
   display: flex;
-  flex-direction: row; /* Ensure layout is row-wise */
+  flex-direction: row;
   height: 100%;
   font-family: Arial, sans-serif;
 }
@@ -26,11 +25,96 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Prevent scrollbars on container */
+  overflow: hidden;
+}
+
+/* Floating button on the top-right corner */
+.floating-btn, .floating-btn-view {
+  position: fixed;
+  right: 20px;
+  background-color: var(--btn-bg);
+  color: var(--primary-color);
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 6px var(--inset-color);
+}
+
+.floating-btn {
+  top: 20px;
+}
+
+.floating-btn-view {
+  top: 80px;
+}
+
+.floating-btn:hover, .floating-btn-view:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.floating-btn img, .floating-btn-view img {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.tooltip-container {
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  right: 188px;
+  box-shadow: 0px 0px 6px var(--inset-color);
+  z-index: 1000;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--btn-bg);
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Add this block for the arrow */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  background-color: var(--btn-bg);
+}
+
+/* Positioning for file tooltip */
+.tooltip.file {
+  top: 25px;
+}
+
+/* Positioning for view tooltip */
+.tooltip.view {
+  top: 85px;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Style for textarea */
-textarea {
+#markdown-input {
   width: 50%;
   height: 100%;
   padding: 10px;
@@ -38,25 +122,41 @@ textarea {
   border-right: 1px solid var(--separator-color);
   outline: none;
   resize: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
   background-color: var(--content-color);
   color: var(--primary-color);
+  transition: width 0.5s ease;
+}
+
+.full-width #markdown-input {
+  padding: 0;
+  width: 0;
+  visibility: hidden;
 }
 
 /* Style for preview area */
 .preview {
-  width: 50%;
-  padding: 10px;
+  flex: 1;
+  padding: 10px 0 10px 10px;
   background-color: var(--content-color);
-  overflow-y: auto; /* Vertical scroll if content overflows */
+  overflow-y: auto;
   box-sizing: border-box;
   color: var(--primary-color);
+  transition: width 0.5s ease;
+}
+
+/* Adjust the full-width behavior */
+.full-width .preview {
+  width: 100%;
 }
 
 /* Style for markdown content */
 .markdown-body {
   box-shadow: inset 0 0 10px var(--inset-color);
   padding: 10px;
-  font-family: 'Arial', sans-serif; /* Apply a web-safe font */
+  font-family: 'Arial', sans-serif;
   font-size: 18px;
 }
 
@@ -64,6 +164,7 @@ textarea {
 .code-block {
   position: relative;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .copy-btn {
@@ -74,7 +175,7 @@ textarea {
   border: 1px solid transparent;
   padding: 10px;
   cursor: pointer;
-  font-size: 20px; /* Font size unchanged */
+  font-size: 20px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -83,7 +184,6 @@ textarea {
   transition: opacity 0.3s;
 }
 
-/* Show copy button when hovering over code block */
 .code-block:hover .copy-btn {
   opacity: 1;
 }

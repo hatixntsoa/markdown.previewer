@@ -13,7 +13,22 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="container">
+  <div class="container full-width">
+    <div class="tooltip-container">
+      <button id="open-file-window" class="floating-btn">
+        <img src="imgs/new.png" alt="New">
+      </button>
+      <span class="tooltip file">Open File</span>
+    </div>
+    
+    <!-- Hidden file input -->
+    <input type="file" id="file-input" accept=".md" style="display: none;" />
+
+    <div class="tooltip-container">
+      <button id="toggle-button" class="floating-btn-view"></button>
+      <span class="tooltip view">Show Source</span>
+    </div>
+
     <textarea id="markdown-input" placeholder="Type your Markdown here..." spellcheck="false"></textarea>
 
     <div class="preview">
