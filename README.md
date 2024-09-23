@@ -25,7 +25,7 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
    
 2. **Navigate to the project directory:**
    ```bash
-   cd markdown-preview
+   cd markdown_previewer
    ```
 
 3. **Open `index.html` in your browser:**
@@ -41,11 +41,11 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 1. **Clone the repository directly to the web server directory:**
    - For **Apache** (default document root: `/var/www/html/`):
      ```bash
-     sudo git clone https://github.com/h471x/markdown_previewer.git /var/www/html/markdown-preview
+     sudo git clone https://github.com/h471x/markdown_previewer.git /var/www/html/markdown_previewer
      ```
    - For **Nginx** (default document root: `/usr/share/nginx/html/`):
      ```bash
-     sudo git clone https://github.com/h471x/markdown_previewer.git /usr/share/nginx/html/markdown-preview
+     sudo git clone https://github.com/h471x/markdown_previewer.git /usr/share/nginx/html/markdown_previewer
      ```
 
 2. **Ensure the web server is running:**
@@ -59,7 +59,7 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
      ```
 
 3. **Access the Markdown Previewer in your browser:**
-   - Navigate to `http://localhost/markdown-preview`.
+   - Navigate to `http://localhost/markdown_previewer`.
 
 ---
 
@@ -83,7 +83,7 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 3. **Start the WAMP or XAMPP server.**
 
 4. **Access the Markdown Previewer in your browser:**
-   - Navigate to `http://localhost/markdown-preview`.
+   - Navigate to `http://localhost/markdown_previewer`.
 
 ___
 
