@@ -1,7 +1,7 @@
 {
-  "name": "Markdown Preview",
-  "short_name": "Md Preview",
-  "start_url": "/markdown_preview",
+  "name": "Markdown Previewer",
+  "short_name": "Md Previewer",
+  "start_url": "/markdown_previewer",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000"
