@@ -222,6 +222,7 @@ function updateToggleButtonTooltip() {
 
 // Open file input dialog when the "+" button is clicked
 openFileWindowBtn.addEventListener('click', () => {
+  openFileWindowBtn.blur();
   fileInput.value = '';
   updatePreview();
   fileInput.click();
@@ -266,7 +267,7 @@ toggleButton.addEventListener('click', () => {
 
 // Update preview on markdown input change
 markdownInput.addEventListener('input', () => {
-  fileInput.value = ''; // Clear file input
+  fileInput.value = '';
   updatePreview();
 });
 
