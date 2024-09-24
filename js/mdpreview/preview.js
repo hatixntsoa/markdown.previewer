@@ -230,7 +230,7 @@ openFileWindowBtn.addEventListener('click', () => {
 
 // Load README.md on startup
 function loadReadmeOnStartup() {
-  fetch('/markdown_preview/README.md')
+  fetch('/markdown_previewer/README.md')
     .then(response => response.ok ? response.text() : Promise.reject())
     .then(data => {
       markdownInput.value = data;
