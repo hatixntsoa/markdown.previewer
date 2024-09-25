@@ -132,6 +132,16 @@ function init() {
   updateToggleButtonImage();
 }
 
+// Add a right border to the markdown input
+// when there is no scrollbar
+function checkScrollbar() {
+  if (markdownInput.scrollHeight > markdownInput.clientHeight) {
+    markdownInput.style.border = 'none';
+  } else {
+    markdownInput.style.borderRight = '1px solid #c9d1d9';
+  }
+}
+
 // Function to update the markdown preview
 function updatePreview(markdownText = markdownInput.value) {
   const htmlContent = marked.parse(markdownText);
@@ -268,6 +278,7 @@ toggleButton.addEventListener('click', () => {
 // Update preview on markdown input change
 markdownInput.addEventListener('input', () => {
   fileInput.value = '';
+  checkScrollbar();
   updatePreview();
 });
 

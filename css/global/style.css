@@ -33,6 +33,7 @@ body {
 /* Floating button on the top-right corner */
 .floating-btn, .floating-btn-view {
   position: fixed;
+  user-select: none;
   right: 20px;
   background-color: var(--btn-bg);
   color: var(--primary-color);
@@ -120,12 +121,11 @@ body {
   width: 50%;
   height: 100%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
   resize: none;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
+  border: none;
+  font-family: Arial, sans-serif;
   background-color: var(--content-color);
   color: var(--primary-color);
   transition: width 0.5s ease;
