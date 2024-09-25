@@ -1,8 +1,26 @@
 # Markdown Previewer
 
-## Overview
+<p align="center">
+ <img height="150" src="https://raw.githubusercontent.com/h471x/markdown_previewer/master/imgs/markdown.png"/>
+</p>
 
-Markdown Previewer is a simple web-based tool that allows you to write, edit, and preview Markdown text in real-time. The application supports syntax highlighting for code blocks, mathematical expressions with KaTeX, and the ability to copy code blocks with a single click. Additionally, users can load Markdown files from their local system to view and edit them directly in the previewer.
+<div align="center">
+
+<p>
+
+``Markdown Previewer`` is a simple web-based tool that allows you to write, edit, and preview Markdown text in real-time. The application supports syntax highlighting for code blocks, mathematical expressions with KaTeX, and the ability to copy code blocks with a single click. Additionally, users can load Markdown files from their local system to view and edit them directly in the previewer.
+
+</p>
+
+### Contents
+
+[Features](#features) |
+[Installation](#installation) |
+[Usage](#usage) |
+[Dependencies](#dependencies) |
+[Contributing](#contributing)
+
+</div>
 
 ## Features
 
