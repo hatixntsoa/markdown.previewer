@@ -1,7 +1,7 @@
 # Markdown Previewer
 
 <p align="center">
- <img height="150" src="https://raw.githubusercontent.com/h471x/markdown_previewer/master/imgs/markdown.png"/>
+ <img height="150" src="https://raw.githubusercontent.com/h471x/markdown_previewer/master/imgs/marknote.png"/>
 </p>
 
 <div align="center">
