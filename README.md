@@ -1,7 +1,7 @@
 # Markdown Previewer
 
 <p align="center">
- <img height="100" src="https://raw.githubusercontent.com/hatixntsoa/markdown_previewer/master/imgs/marknote.png"/>
+ <img height="100" src="https://raw.githubusercontent.com/hatixntsoa/markdown.previewer/master/imgs/marknote.png"/>
 </p>
 
 <div align="center">
@@ -38,12 +38,12 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hatixntsoa/markdown_previewer.git
+   git clone https://github.com/hatixntsoa/markdown.previewer.git
    ```
    
 2. **Navigate to the project directory:**
    ```bash
-   cd markdown_previewer
+   cd markdown.previewer
    ```
 
 3. **Open `index.html` in your browser:**
@@ -59,11 +59,11 @@
 1. **Clone the repository directly to the web server directory:**
    - For **Apache** (default document root: `/var/www/html/`):
      ```bash
-     sudo git clone https://github.com/hatixntsoa/markdown_previewer.git /var/www/html/markdown_previewer
+     sudo git clone https://github.com/hatixntsoa/markdown.previewer.git /var/www/html/markdown.previewer
      ```
    - For **Nginx** (default document root: `/usr/share/nginx/html/`):
      ```bash
-     sudo git clone https://github.com/hatixntsoa/markdown_previewer.git /usr/share/nginx/html/markdown_previewer
+     sudo git clone https://github.com/hatixntsoa/markdown.previewer.git /usr/share/nginx/html/markdown.previewer
      ```
 
 2. **Ensure the web server is running:**
@@ -77,7 +77,7 @@
      ```
 
 3. **Access the Markdown Previewer in your browser:**
-   - Navigate to `http://localhost/markdown_previewer`.
+   - Navigate to `http://localhost/markdown.previewer`.
 
 ---
 
@@ -85,23 +85,23 @@
 
 1. **Clone the repository to your local machine:**
    ```bash
-   git clone https://github.com/hatixntsoa/markdown_previewer.git
+   git clone https://github.com/hatixntsoa/markdown.previewer.git
    ```
 
 2. **Copy the project directory to the WAMP or XAMPP document root:**
    - For **WAMP** (usually `C:\wamp64\www\`):
      ```bash
-     xcopy markdown_previewer C:\wamp64\www\markdown_previewer /E /I
+     xcopy markdown.previewer C:\wamp64\www\markdown.previewer /E /I
      ```
    - For **XAMPP** (usually `C:\xampp\htdocs\`):
      ```bash
-     xcopy markdown_previewer C:\xampp\htdocs\markdown_previewer /E /I
+     xcopy markdown.previewer C:\xampp\htdocs\markdown.previewer /E /I
      ```
 
 3. **Start the WAMP or XAMPP server.**
 
 4. **Access the Markdown Previewer in your browser:**
-   - Navigate to `http://localhost/markdown_previewer`.
+   - Navigate to `http://localhost/markdown.previewer`.
 
 ___
 
