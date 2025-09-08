@@ -29,12 +29,12 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 
 1. **Clone the repository:**
    \`\`\`bash
-   git clone https://github.com/h471x/markdown_previewer.git
+   git clone https://github.com/hatixntsoa/markdown.previewer.git
    \`\`\`
    
 2. **Navigate to the project directory:**
    \`\`\`bash
-   cd markdown_previewer
+   cd markdown.previewer
    \`\`\`
 
 3. **Open \`index.html\` in your browser:**
@@ -50,11 +50,11 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 1. **Clone the repository directly to the web server directory:**
    - For **Apache** (default document root: \`/var/www/html/\`):
      \`\`\`bash
-     sudo git clone https://github.com/h471x/markdown_previewer.git /var/www/html/markdown_previewer
+     sudo git clone https://github.com/hatixntsoa/markdown.previewer.git /var/www/html/markdown.previewer
      \`\`\`
    - For **Nginx** (default document root: \`/usr/share/nginx/html/\`):
      \`\`\`bash
-     sudo git clone https://github.com/h471x/markdown_previewer.git /usr/share/nginx/html/markdown_previewer
+     sudo git clone https://github.com/hatixntsoa/markdown.previewer.git /usr/share/nginx/html/markdown.previewer
      \`\`\`
 
 2. **Ensure the web server is running:**
@@ -68,7 +68,7 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
      \`\`\`
 
 3. **Access the Markdown Previewer in your browser:**
-   - Navigate to \`http://localhost/markdown_previewer\`.
+   - Navigate to \`http://localhost/markdown.previewer\`.
 
 ---
 
@@ -76,23 +76,23 @@ Markdown Previewer is a simple web-based tool that allows you to write, edit, an
 
 1. **Clone the repository to your local machine:**
    \`\`\`bash
-   git clone https://github.com/h471x/markdown_previewer.git
+   git clone https://github.com/hatixntsoa/markdown.previewer.git
    \`\`\`
 
 2. **Copy the project directory to the WAMP or XAMPP document root:**
    - For **WAMP** (usually \`C:\\wamp64\\www\\\`):
      \`\`\`bash
-     xcopy markdown_previewer C:\\wamp64\\www\\markdown_previewer /E /I
+     xcopy markdown.previewer C:\\wamp64\\www\\markdown.previewer /E /I
      \`\`\`
    - For **XAMPP** (usually \`C:\\xampp\\htdocs\\\`):
      \`\`\`bash
-     xcopy markdown_previewer C:\\xampp\\htdocs\\markdown_previewer /E /I
+     xcopy markdown.previewer C:\\xampp\\htdocs\\markdown.previewer /E /I
      \`\`\`
 
 3. **Start the WAMP or XAMPP server.**
 
 4. **Access the Markdown Previewer in your browser:**
-   - Navigate to \`http://localhost/markdown_previewer\`.
+   - Navigate to \`http://localhost/markdown.previewer\`.
 
 </details>
 
@@ -240,7 +240,7 @@ openFileWindowBtn.addEventListener('click', () => {
 
 // Load README.md on startup
 function loadReadmeOnStartup() {
-  fetch('/markdown_previewer/README.md')
+  fetch('/markdown.previewer/README.md')
     .then(response => response.ok ? response.text() : Promise.reject())
     .then(data => {
       markdownInput.value = data;

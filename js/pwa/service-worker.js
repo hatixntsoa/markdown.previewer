@@ -1,22 +1,22 @@
 const CACHE_NAME = 'markdown-previewer-v0.2';
 const urlsToCache = [
-  '/markdown_previewer',
-  '/markdown_previewer/index.html',
-  '/markdown_previewer/css/global/style.css',
-  '/markdown_previewer/css/global/scroll.css',
-  '/markdown_previewer/css/global/colors.css',
-  '/markdown_previewer/css/mdpreview/ghmd.min.css',
-  '/markdown_previewer/css/katex/katex.min.css',
-  '/markdown_previewer/imgs/check.png',
-  '/markdown_previewer/imgs/copy.png',
-  '/markdown_previewer/imgs/markdown.png',
-  '/markdown_previewer/js/katex/katex.min.js',
-  '/markdown_previewer/js/katex/auto-render.min.js',
-  '/markdown_previewer/js/mdpreview/marked.min.js',
-  '/markdown_previewer/js/mdpreview/preview.js',
-  '/markdown_previewer/js/pwa/pwa.js',
-  '/markdown_previewer/js/pwa/service-worker.js',
-  '/markdown_previewer/manifest.json'
+  '/markdown.previewer',
+  '/markdown.previewer/index.html',
+  '/markdown.previewer/css/global/style.css',
+  '/markdown.previewer/css/global/scroll.css',
+  '/markdown.previewer/css/global/colors.css',
+  '/markdown.previewer/css/mdpreview/ghmd.min.css',
+  '/markdown.previewer/css/katex/katex.min.css',
+  '/markdown.previewer/imgs/check.png',
+  '/markdown.previewer/imgs/copy.png',
+  '/markdown.previewer/imgs/markdown.png',
+  '/markdown.previewer/js/katex/katex.min.js',
+  '/markdown.previewer/js/katex/auto-render.min.js',
+  '/markdown.previewer/js/mdpreview/marked.min.js',
+  '/markdown.previewer/js/mdpreview/preview.js',
+  '/markdown.previewer/js/pwa/pwa.js',
+  '/markdown.previewer/js/pwa/service-worker.js',
+  '/markdown.previewer/manifest.json'
 ];
 
 // Install event - Cache all specified files
